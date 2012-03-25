@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link href="injector.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="top_pane">
+            <div id="navigation">
+                <ol>
+                    <li><a style="color:white;" href="http://gpo.iitb.ac.in">GPO</a></li>
+                    <li><a href="http://www.google.co.in/webhp?hl=en&tab=mw">Search</a></li>
+                    <li><a href="https://www.google.co.in/imghp?hl=en&tab=ii">Images</a></li>
+                    <li><a href="http://maps.google.co.in/">Maps</a></li>
+                    <li><a href="http://www.youtube.com">Youtube</a></li>
+                    <li><a href="http://news.google.co.in/nwshp?hl=en&tab=wn">News</a></li>
+                    <li><a href="https://mail.google.com/mail/?tab=wm">Gmail</a></li>
+                    <li><a href="https://docs.google.com/?tab=wo&authuser=0">Documents</a></li>
+                    <li><a href="https://www.google.com/calendar?tab=wc">Calender</a></li>
+            </div>
+            <div id="logoAndSearch">
+                <div id="logo"><img src="img/iitb_logo.jpg" height=50 /></div>
+                <div id="search"></div>
+            </div>
+        </div>
+        <div id="left_pane">
+            <div class="button">
+                <a href="#">COMPOSE</a>
+            </div>
+            <div class="pad"></div>
+            <div id="tab_panel">
+                <div class="tab">
+                    <a href="#">Inbox</a>
+                </div>
+                <div class="tab">
+                    <a href="#">Spam</a>
+                </div>
+                <div class="tab">
+                    <a href="#">Trash</a>
+                </div>
+                <div class="tab">
+                    <a href="#">Sent</a>
+                </div>
+                <div class="tab">
+                    <a href="#">Folders</a>
+                </div>
+                <div class="tab">
+                    <a href="#">Options</a>
+                </div>
+            </div>
+        </div>
+        <div id="right_pane">
+            <div id="unread_mails">
+                <details open>
+                    <summary><span class="details_summary">Unread Mails</span></summary>
+                    <br/>
+                <table cellpadding="0" style="width:100%;">
+                    <colgroup>
+                        <col class="c1">
+                        <col class="c2">
+                        <col class="c3">
+                        <col class="c4">
+                    </colgroup>  
+                    <tbody>
+                    <tr class="mail_entry">
+                        <td class="checkbox"></td>
+                        <td class="sender">Maria</td>
+                        <td class="subject">Re: Hello World</td>
+                        <td class="time">3:50px</td>
+                    </tr>
+                    <tr class="mail_entry">
+                        <td class="checkbox"></td>
+                        <td class="sender">Maria</td>
+                        <td class="subject">Re: Hello World</td>
+                        <td class="time">3:50px</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </details>
+            </div>
+            <div id="read_mails">
+                 <details open>
+                    <summary><span class="details_summary">Read Mails</span></summary>
+                    <br/>
+                 <table cellpadding="0" style="width:100%;">
+                    <colgroup>
+                        <col class="c1">
+                        <col class="c2">
+                        <col class="c3">
+                        <col class="c4">
+                    </colgroup>  
+                    <tbody>
+                    <tr class="mail_entry read">
+                        <td></td>
+                        <td>Maria</td>
+                        <td>Re: Hello World</td>
+                        <td>3:50px</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </details>
+            </div>
+        </div>
+    </body>
+</html>

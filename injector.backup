@@ -1,0 +1,47 @@
+console.log("GPO Styler");
+if (frames.length == 0)
+{
+	var tables = document.body.getElementsByTagName("table");
+
+	//var tabs = tables[0];
+	var nav_menu = tables[0].getElementsByTagName("a"); //main nav menu + left pane menu + leftpane_checkmail :P
+	
+	var form_table=tables[1].getElementsByTagName("tr");
+	/*
+		description of form_table array
+		[0] -> table of pagelinks contains the following subtables
+		
+		[4 or 5] -> [MoveSelectedTo:dropdown,move,forward], [BUTTONS:read, unread, delete] ([4] and [5] are same table inside table :P)
+		subtable->[6] -> [MoveSelectedTo:dropdown,move,forward]
+		subtable->[7] -> [BUTTONS:read, unread, delete]
+		
+		[10] -> inner table of mails :P
+		[11] -> table headers... FROM,  DATE, SUbject
+		
+		[7] -> spacer with BUTTON:archive
+	*/
+	var page_links=form_table[0].getElementsByTagName("a"); //pagelinks + left_pane_chackmail
+	var mail_table=form_table[10].getElementsByTagName("table")[0];
+	var mail_table_length = mail_table.getElementsByTagName("tr").length;
+	/*
+		mailtable:
+		[0] is the table header
+		[1] is first row, [2] is spacer
+		[3] is second row, [4] is spacer
+		.
+		.
+		[2i-1] is i'th row, [2i] is spacer
+		.
+		.
+		[n] is (n+1/2)th row
+		**********************************
+		where n=(mail_table_length-1)
+		**********************************
+		also for every mailtable[x], x=0 OR x=odd
+		mailtable[x] is a "tr" divided into 5 "td's" which are
+		checkbox, FROM, DATE, spacer, SUBJECT
+	*/
+	
+	
+	console.log(mail_table);
+}
